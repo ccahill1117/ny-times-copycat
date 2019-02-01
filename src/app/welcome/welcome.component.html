@@ -1,3 +1,9 @@
-<p>
-  welcome works!
-</p>
+
+<div class="headlineArticle" *ngFor="let article of articles">
+  <h2>{{article.title}}</h2>
+  <p>{{article.date}}</p>
+  <p>Written By : {{article.author}}</p>
+  <p>{{article.previewText}}</p>
+  <p></p>
+
+</div>
