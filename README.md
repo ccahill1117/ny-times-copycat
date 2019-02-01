@@ -1,5 +1,7 @@
 # NyTimes copyCat
 
+(https://www.nytimes.com/)[The real NYTimes]
+
 ## By Christopher Thomas Cahill
 
 ### Features Included 1/25/2019
