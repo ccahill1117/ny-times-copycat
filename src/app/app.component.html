@@ -17,8 +17,9 @@
           <button *ngIf="!isLoggedIn" type="button" name="button">Log In</button>
         </a>
         <a (click)="logout()">
-          <button *ngIf="isLoggedIn" type="button" name="button">Welcome back, {{userName}}</button>
+          <button *ngIf="isLoggedIn" type="button" name="button">Logout, {{userName}}</button>
         </a>
+
       </div>
     </div>
   </div>
