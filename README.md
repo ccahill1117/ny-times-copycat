@@ -15,6 +15,10 @@ Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 - Adding new articles
 - Crossword?
 
+### Instructions
+- clone this repository
+-
+
 ### Original Angular 7 repo
 
 The author began project in Angular 7 then ported to Angular 5 due to higher level of familiarity with Angular 5 -- [you can check the original here](https://github.com/ccahill1117/ng-NYT)
@@ -27,7 +31,7 @@ The author began project in Angular 7 then ported to Angular 5 due to higher lev
 
 ### Interesting Findings
 
-Consider the following piece of code : 
+Consider the following piece of code :
 
 ```Javascript
 export class MastheadComponent implements OnInit {
@@ -53,7 +57,7 @@ export class MastheadComponent implements OnInit {
 }
 ```
 
-The author
+The Alpha Vantage API returns a JSON object which may be parsed through bracket notation (lots of arrays). However, TypeScript does not allow
 
 ##### MIT License
 

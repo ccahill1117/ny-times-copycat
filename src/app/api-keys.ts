@@ -7,3 +7,7 @@ export const masterFirebaseConfig = {
   storageBucket: "ng-nytimes.appspot.com",
   messagingSenderId: "440761930254"
   };
+
+export const alphaKey = {
+  alphaVantage: "87CWIJDXVDZUBFKC",
+};

@@ -5,6 +5,7 @@ import { Article } from '../article.model';
 import { ArticleServiceService } from '../article-service.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
 import * as firebase from "firebase";
+import { Routes } from '@angular/router';
 
 
 @Component({

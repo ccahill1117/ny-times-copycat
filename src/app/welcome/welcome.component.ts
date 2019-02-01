@@ -44,7 +44,7 @@ export class WelcomeComponent implements OnInit {
     // console.log(this.articles[0]);
   }
 
-  goToDetailPage(clickedArticle) {
+  goToArticlePage(clickedArticle) {
     this.router.navigate(['articles', clickedArticle.$key]);
   };
 
