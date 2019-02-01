@@ -1,3 +1,32 @@
 div {
   font-family: sans-serif;
+  border-style: dashed;
+  padding: 10px;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px; 
+
+}
+
+.headline {
+  grid-column: 1 / span 2;
+}
+
+.oped {
+  grid-column: 3 ;
+  grid-row: 1 / span 2;
+}
+
+.sports {
+  grid-column: 2 ;
+  grid-row: 2 ;
+
+}
+
+.finance {
+  grid-column: 1 ;
+  grid-row: 2 ;
 }
