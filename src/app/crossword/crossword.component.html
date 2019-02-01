@@ -1,7 +1,11 @@
-<div *ngIf="user" class="xWord">
-  <img src="../assets/xword.png" alt="">
-</div>
+<div class="xWordWrapper">
 
-<div class="xWord">
-  <h3>You'll need to log in to access the crossword!</h3>
+  <div *ngIf="user" class="xWord">
+    <img src="../assets/xword.png" alt="">
+  </div>
+
+  <div *ngIf="!user" class="xWord">
+    <h3>You'll need to log in to access the crossword!</h3>
+  </div>
+
 </div>
