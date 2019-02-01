@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { CrosswordComponent } from './crossword/crossword.component';
 
 
 
@@ -24,6 +25,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     MastheadComponent,
     LoginComponent,
     FooterComponent,
+    CrosswordComponent,
 
   ],
   imports: [
