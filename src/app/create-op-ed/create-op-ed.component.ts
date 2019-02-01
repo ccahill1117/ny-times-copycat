@@ -4,14 +4,18 @@ import { ArticleServiceService } from '../article-service.service';
 import * as firebase from "firebase";
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-create-op-ed',
   templateUrl: './create-op-ed.component.html',
   styleUrls: ['./create-op-ed.component.css'],
-  providers: [ArticleServiceService]
+  providers: [ArticleServiceService, AuthenticationService]
 })
 export class CreateOpEdComponent implements OnInit {
+
+  private user;
+
   articles: FirebaseListObservable<any[]>;
 
   const dateNow: Date = new Date();
@@ -22,6 +26,10 @@ export class CreateOpEdComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  ngDoCheck() {
+    this.user = firebase.auth().currentUser;
   }
 
 
