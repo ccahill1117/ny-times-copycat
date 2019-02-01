@@ -7,12 +7,12 @@ import { HttpModule } from '@angular/http';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { MastheadComponent } from './masthead/masthead.component';
-import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { CrosswordComponent } from './crossword/crossword.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { masterFirebaseConfig } from './api-keys';
 
@@ -31,7 +31,6 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     MastheadComponent,
-    LoginComponent,
     FooterComponent,
     CrosswordComponent,
 
@@ -42,7 +41,8 @@ export const firebaseConfig = {
     FormsModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
 
   ],
   providers: [],
