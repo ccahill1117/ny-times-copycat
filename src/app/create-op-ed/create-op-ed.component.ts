@@ -20,6 +20,8 @@ export class CreateOpEdComponent implements OnInit {
 
   dateNow: Date = new Date();
 
+  dateString: string = this.dateNow.toString();
+
   constructor(private articleService: ArticleServiceService) {
 
   }
@@ -30,6 +32,7 @@ export class CreateOpEdComponent implements OnInit {
 
   ngDoCheck() {
     this.user = firebase.auth().currentUser;
+
   }
 
 
@@ -37,12 +40,10 @@ export class CreateOpEdComponent implements OnInit {
       title: string,
       previewText: string,
       text: string,
-      author: string,
-      date: Date = this.dateNow
       )
-
       {
-        var newArticle: Article = new Article({title: title, previewText: previewText, text: text, author: author, date: date});
-        this.articleService.addArticle(newArticle);
+
+        this.articleService.addArticle(new Article({title: title, previewText: previewText, text: text, author: this.user.displayName, date: this.dateString}));
+        console.log(this.dateNow);
       }
 }

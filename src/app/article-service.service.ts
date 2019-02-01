@@ -14,7 +14,7 @@ export class ArticleServiceService {
   return this.articles;
   }
 
-  addArticle(newArticle: Article) {
+  addArticle(newArticle) {
     this.articles.push(newArticle);
   }
 

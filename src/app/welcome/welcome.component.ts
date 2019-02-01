@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Editor } from '../editor.model';
 import { Article } from '../article.model';
 import * as faker from 'faker';
+import * as firebase from "firebase";
 
 
 

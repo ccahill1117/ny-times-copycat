@@ -16,13 +16,8 @@
       <br>
       <textarea #newBody></textarea>
     </div>
-    <div class="">
-      <label>Author Name</label>
-      <br>
-      <textarea #newAuthor></textarea>
-    </div>
-  <div>
-      <button (click)="newArticle(newTitle.value,newPreviewText.value,newBody.value,newAuthor.value); newTitle.value='';newPreviewText.value='';newBody.value='';newAuthor.value=''">Submit Your Op-Ed</button>
+    <div>
+      <button (click)="newArticle(newTitle.value,newPreviewText.value,newBody.value); newTitle.value='';newPreviewText.value='';newBody.value=''">Submit Your Op-Ed</button>
     </div>
   </div>
 </div>
