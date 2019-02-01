@@ -40,10 +40,11 @@ export class CreateOpEdComponent implements OnInit {
       title: string,
       previewText: string,
       text: string,
+      type: string
       )
       {
 
-        this.articleService.addArticle(new Article({title: title, previewText: previewText, text: text, author: this.user.displayName, date: this.dateString}));
+        this.articleService.addArticle(new Article({title: title, previewText: previewText, text: text, author: this.user.displayName, date: this.dateString, type: "op-ed"}));
         console.log(this.dateNow);
       }
 }

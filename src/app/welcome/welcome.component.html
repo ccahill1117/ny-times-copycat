@@ -5,6 +5,11 @@
   </div>
   <div class="oped">
     <h2>op-ed!</h2>
+    <div *ngFor="let article of articles | async"  class="panel panel-default">
+      <div class="panel-body">
+        <h3 (click)="goToDetailPage(article)"><em>{{article.name}}</em> by {{article.author}}</h3>
+      </div>
+    </div>
   </div>
   <div class="sports">
     <h2>sports</h2>
