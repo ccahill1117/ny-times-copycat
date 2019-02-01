@@ -11,7 +11,7 @@ import * as firebase from "firebase";
   providers: [AuthenticationService]
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Open NY Times';
   private user;
   private isLoggedIn: Boolean;
   private userName: String;

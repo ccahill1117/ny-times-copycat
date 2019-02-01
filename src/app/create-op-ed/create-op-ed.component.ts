@@ -36,7 +36,7 @@ export class CreateOpEdComponent implements OnInit {
   }
 
 
-  newArticle(
+  newOpEd(
       title: string,
       previewText: string,
       text: string,

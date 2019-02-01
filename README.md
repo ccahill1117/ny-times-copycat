@@ -17,13 +17,43 @@ Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 
 ### Original Angular 7 repo
 
-Project begun in Angular 7 then ported to Angular 5 due to higher level of familiarity with Angular 5 -- [you can check the original here](https://github.com/ccahill1117/ng-NYT)
+The author began project in Angular 7 then ported to Angular 5 due to higher level of familiarity with Angular 5 -- [you can check the original here](https://github.com/ccahill1117/ng-NYT)
 
 ### Thanks!
 
 - Faker borrowed from [Faker JS](https://github.com/Marak/Faker.js)
 - API calls made to [Alpha Vantage](https://www.alphavantage.co/) for Dow/Nasdaq/S&P real time data
 - Crossword borrowed from [NY Times Crossword](https://www.nytimes.com/crosswords)
+
+### Interesting Findings
+
+Consider the following piece of code : 
+
+```Javascript
+export class MastheadComponent implements OnInit {
+  dowInfo: any[] = null;
+
+  metaDataString: any = "Meta Data";
+  lastRefreshedString: any = "3. Last Refreshed";
+
+  constructor(private stockCall: StockCallService) { }
+
+  getStockInfo() {
+    this.stockCall.getDow().subscribe(response => {
+      let body = response.json();
+      let lastRefreshed = body[this.metaDataString][this.lastRefreshedString];
+      this.dowInfo = body["Time Series (60min)"][lastRefreshed]["4. close"];
+    })
+  }
+
+  ngOnInit() {
+    this.getStockInfo();
+  }
+
+}
+```
+
+The author
 
 ##### MIT License
 
