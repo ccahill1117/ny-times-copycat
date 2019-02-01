@@ -18,7 +18,7 @@ export class CreateOpEdComponent implements OnInit {
 
   articles: FirebaseListObservable<any[]>;
 
-  const dateNow: Date = new Date();
+  dateNow: Date = new Date();
 
   constructor(private articleService: ArticleServiceService) {
 
@@ -37,7 +37,7 @@ export class CreateOpEdComponent implements OnInit {
       title: string,
       previewText: string,
       text: string,
-      author: number,
+      author: string,
       date: Date = this.dateNow
       )
 
@@ -45,6 +45,4 @@ export class CreateOpEdComponent implements OnInit {
         var newArticle: Article = new Article({title: title, previewText: previewText, text: text, author: author, date: date});
         this.articleService.addArticle(newArticle);
       }
-}
-
 }
