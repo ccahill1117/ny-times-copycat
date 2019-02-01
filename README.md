@@ -1,6 +1,6 @@
 # NyTimes copyCat
 
-(https://www.nytimes.com/)[The real NYTimes]
+Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 
 ## By Christopher Thomas Cahill
 
@@ -9,14 +9,21 @@
 - API call to include stock information
 - Rudimentary formatting
 
-### Features to be added
+### Features to be added 2/01/2019
 - Improved formatting (i.e. headline artcile vs "smaller" news)
 - Login
 - Adding new articles
 - Crossword?
 
-#### Faker borrowed from https://github.com/Marak/Faker.js -- with thanks!
+### Original Angular 7 repo
 
+Project begun in Angular 7 then ported to Angular 5 due to higher level of familiarity with Angular 5 -- [you can check the original here](https://github.com/ccahill1117/ng-NYT)
+
+### Thanks!
+
+- Faker borrowed from [Faker JS](https://github.com/Marak/Faker.js)
+- API calls made to [Alpha Vantage](https://www.alphavantage.co/) for Dow/Nasdaq/S&P real time data
+- Crossword borrowed from [NY Times Crossword](https://www.nytimes.com/crosswords)
 
 ##### MIT License
 
