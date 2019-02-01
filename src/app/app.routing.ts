@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { CrosswordComponent } from './crossword/crossword.component';
+import { MastheadComponent } from './masthead/masthead.component';
 
 
 const routes: Routes = [
