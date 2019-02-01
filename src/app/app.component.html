@@ -1,6 +1,26 @@
 <div class="mainDiv">
   <div class="appLogin">
-    <app-login></app-login>
+    <div class="topBar">
+      <div class="categoriesSearch">
+        <button class="btn btn-info" type="button" name="button">Categories</button>
+        <button class="btn btn-info" type="button" name="button">Search</button>
+      </div>
+      <div class="languages">
+        <p>English</p>
+        <p>Espanol</p>
+      </div>
+      <div class="loginCrossword">
+        <a routerLink="app-crossword">
+            <button type="button" name="button">Crossword</button>
+        </a>
+        <a (click)="login()">
+          <button *ngIf="!isLoggedIn" type="button" name="button">Log In</button>
+        </a>
+        <a (click)="logout()">
+          <button *ngIf="isLoggedIn" type="button" name="button">{{username}}</button>
+        </a>
+      </div>
+    </div>
   </div>
   <div class="appMasthead">
     <app-masthead></app-masthead>

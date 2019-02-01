@@ -14,7 +14,15 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { CrosswordComponent } from './crossword/crossword.component';
 
+import { masterFirebaseConfig } from './api-keys';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket,
+  messagingSenderId: masterFirebaseConfig.messagingSenderId
+};
 
 
 @NgModule({
@@ -32,7 +40,9 @@ import { CrosswordComponent } from './crossword/crossword.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
 
   ],
   providers: [],

@@ -1,0 +1,23 @@
+.topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+
+}
+
+.categoriesSearch {
+
+}
+
+.loginCrossword {
+
+}
+
+button {
+  background-color: #6288a5;
+  font-family: sans-serif;
+  color: white;
+  padding: 11px 12px 8px;
+  border-radius: 8px;
+}
