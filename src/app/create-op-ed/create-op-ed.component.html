@@ -1,3 +1,28 @@
-<p>
-  create-op-ed works!
-</p>
+<div class="newOpEdBox">
+  <h2>Write a new Op-Ed!</h2>
+  <div class="newOpEd">
+    <div class="">
+      <label>Title</label>
+      <br>
+      <textarea #newTitle></textarea>
+    </div>
+    <div class="">
+      <label>Preview Text</label>
+      <br>
+      <textarea #newPreviewText></textarea>
+    </div>
+    <div class="">
+      <label>Op-Ed Body</label>
+      <br>
+      <textarea #newBody></textarea>
+    </div>
+    <div class="">
+      <label>Author Name</label>
+      <br>
+      <textarea #newAuthor></textarea>
+    </div>
+  <div>
+      <button (click)="newArticle(newName.value,newBrand.value,newPrice.value,newPintPrice.value,newAlcohol.value,newIbu.value); newTitle.value='';newPreviewText.value='';newBody.value='';newAuthor.value=''">Submit Your Op-Ed</button>
+    </div>
+  </div>
+</div>
