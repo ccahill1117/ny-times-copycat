@@ -3,7 +3,7 @@ export class Article {
   previewText: string = "";
   text: string = "";
   author: string = "";
-  date: string = "";
+  date: Date;
 
 
   constructor(public params) {
