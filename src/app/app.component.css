@@ -6,10 +6,14 @@
 
 }
 
-.categoriesSearch {
-
+.mainDiv {
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
+.categoriesSearch {
+}
 
 button {
   background-color: #6288a5;
@@ -17,4 +21,20 @@ button {
   color: white;
   padding: 11px 12px 8px;
   border-radius: 8px;
+}
+
+.footer {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ color: black;
+ background-color: white;
+ padding: 20px;
+
+}
+
+a {
+ text-decoration: none;
+ font-family: sans-serif;
 }

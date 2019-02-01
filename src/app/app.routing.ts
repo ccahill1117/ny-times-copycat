@@ -5,6 +5,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { CrosswordComponent } from './crossword/crossword.component';
 import { MastheadComponent } from './masthead/masthead.component';
+import { CreateOpEdComponent } from './create-op-ed/create-op-ed.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,10 @@ const routes: Routes = [
  {
    path: 'app-crossword',
    component: CrosswordComponent
+ },
+ {
+   path: 'app-create-op-ed',
+   component: CreateOpEdComponent
  }
 ];
 

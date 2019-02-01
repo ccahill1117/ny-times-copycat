@@ -15,6 +15,7 @@ import { CrosswordComponent } from './crossword/crossword.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { masterFirebaseConfig } from './api-keys';
+import { CreateOpEdComponent } from './create-op-ed/create-op-ed.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,6 +34,7 @@ export const firebaseConfig = {
     MastheadComponent,
     FooterComponent,
     CrosswordComponent,
+    CreateOpEdComponent,
 
   ],
   imports: [

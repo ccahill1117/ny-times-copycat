@@ -4,6 +4,9 @@
       <div class="categoriesSearch">
         <button class="btn btn-info" type="button" name="button">Categories</button>
         <button class="btn btn-info" type="button" name="button">Search</button>
+        <a routerLink="app-create-op-ed">
+          <button *ngIf="user" type="button" name="button">Submit an op-ed!</button>
+        </a>
       </div>
       <div class="languages">
         <p>English</p>
@@ -19,7 +22,6 @@
         <a (click)="logout()">
           <button *ngIf="user" type="button" name="button">Logout, {{user.displayName}}</button>
         </a>
-
       </div>
     </div>
   </div>
@@ -31,4 +33,11 @@
 
   <app-footer></app-footer>
 
+
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <a routerLink="about">About NY Times copyCat</a>
+  </div>
+</footer>

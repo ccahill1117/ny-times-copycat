@@ -18,7 +18,7 @@ export class MastheadComponent implements OnInit {
       let body = response.json();
       let lastRefreshed = body["Meta Data"][["3. Last Refreshed"]];
       this.dowInfo = body["Time Series (60min)"][lastRefreshed]["4. close"];
-      console.log(this.dowInfo["Time Series (60min)"][lastRefreshed]["4. close"]);
+      // console.log(this.dowInfo["Time Series (60min)"][lastRefreshed]["4. close"]);
 
     })
   }
