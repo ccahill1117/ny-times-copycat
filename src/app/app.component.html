@@ -14,10 +14,10 @@
             <button type="button" name="button">Crossword</button>
         </a>
         <a (click)="login()">
-          <button *ngIf="!isLoggedIn" type="button" name="button">Log In</button>
+          <button *ngIf="!user" type="button" name="button">Log In</button>
         </a>
         <a (click)="logout()">
-          <button *ngIf="isLoggedIn" type="button" name="button">Logout, {{userName}}</button>
+          <button *ngIf="user" type="button" name="button">Logout, {{user.displayName}}</button>
         </a>
 
       </div>

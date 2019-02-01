@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../authentication.service';
+import * as firebase from "firebase";
 
 @Component({
   selector: 'app-crossword',
@@ -9,16 +10,12 @@ import { AuthenticationService } from '../authentication.service';
 })
 export class CrosswordComponent implements OnInit {
 
-  private isLoggedIn: Boolean = null;
+  private user;
 
-  constructor(public authService: AuthenticationService) {
-    this.authService.user.subscribe(user => {
-      if (user == null) {
-        this.isLoggedIn = false;
-      } else {
-        this.isLoggedIn = true;
-      }
-    });
+  constructor() {}
+
+  ngDoCheck() {
+    this.user = firebase.auth().currentUser;
   }
 
   ngOnInit() {

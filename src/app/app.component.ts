@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthenticationService } from './authentication.service';
+import * as firebase from "firebase";
+
 
 @Component({
   selector: 'app-root',
@@ -10,19 +12,11 @@ import { AuthenticationService } from './authentication.service';
 })
 export class AppComponent {
   title = 'app';
-  user;
+  private user;
   private isLoggedIn: Boolean;
   private userName: String;
 
   constructor(public authService: AuthenticationService) {
-  this.authService.user.subscribe(user =>  {
-    if (user == null) {
-       this.isLoggedIn = false;
-     } else {
-       this.isLoggedIn = true;
-       this.userName = user.displayName;
-     }
-    });
   }
 
 login() {
@@ -32,5 +26,9 @@ login() {
 logout() {
   this.authService.logout();
 }
+
+ngDoCheck() {
+    this.user = firebase.auth().currentUser;
+  }
 
 }
