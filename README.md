@@ -29,7 +29,7 @@ Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 - make a duplicate copy of "src/app/api-keys_template.ts" and name it "api-keys.ts" and fill in the requisite blank field with own Alpha Vantage and Firebase api info
 - $ npm install
 - $ ng serve --port (####) -o
--
+
 ### Original Angular 7 repo
 
 The author began project in Angular 7 then ported to Angular 5 due to higher level of familiarity with Angular 5 -- [you can check the original here](https://github.com/ccahill1117/ng-NYT)
