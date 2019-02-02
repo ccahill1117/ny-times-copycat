@@ -2,12 +2,12 @@ import {Pipe, PipeTransform} from '@angular/core';
 import { Article } from './article.model';
 
 @Pipe({
-  name: "dateOrder",
+  name: "articleType",
   pure: false
 })
 
-export class datePipe implements PipeTransform {
-  transform(input: Article[]){
+export class typePipe implements PipeTransform {
+  transform(input: Article[]) {
     var output: Article[] = [];
 
 

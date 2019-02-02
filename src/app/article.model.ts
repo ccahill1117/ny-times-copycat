@@ -3,6 +3,7 @@ export class Article {
   previewText: string = "";
   text: string = "";
   author: string = "";
+  type: string = "";
   date: string;
 
 
@@ -11,6 +12,7 @@ export class Article {
     this.previewText = params.previewText;
     this.text = params.text;
     this.author = params.author;
+    this.type = params.type;
     this.date = params.date;
 
   }

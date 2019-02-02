@@ -5,6 +5,7 @@ import * as firebase from "firebase";
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
+import * as faker from 'faker';
 
 @Component({
   selector: 'app-create-op-ed',
@@ -44,7 +45,7 @@ export class CreateOpEdComponent implements OnInit {
       )
       {
 
-        this.articleService.addArticle(new Article({title: title, previewText: previewText, text: text, author: this.user.displayName, date: this.dateString, type: "op-ed"}));
+        this.articleService.addArticle(new Article({title: title, previewText: previewText, text: text, author: this.user.displayName, date: this.dateString, type: type}));
         console.log(this.dateNow);
       }
 }

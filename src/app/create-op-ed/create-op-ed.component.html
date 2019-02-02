@@ -1,5 +1,5 @@
 <div class="newOpEdBox">
-  <h2>Write a new Op-Ed!</h2>
+  <h2>Write a new Article!</h2>
   <div class="newOpEd">
     <div class="">
       <label>Title</label>
@@ -16,8 +16,18 @@
       <br>
       <textarea #newBody></textarea>
     </div>
+    <div class="">
+      <label>Category of Article</label>
+      <br>
+      <select #newType>
+        <option value="op-ed">Op-Ed</option>
+        <option  value="headline">Headline</option>
+        <option value="sports">Sports</option>
+        <option  value="finance">Finance</option>
+      </select>
+    </div>
     <div>
-      <button (click)="newOpEd(newTitle.value,newPreviewText.value,newBody.value); newTitle.value='';newPreviewText.value='';newBody.value=''">Submit Your Op-Ed</button>
+      <button (click)="newOpEd(newTitle.value,newPreviewText.value,newBody.value,newType.value); newTitle.value='';newPreviewText.value='';newBody.value=''">Submit Your Op-Ed</button>
     </div>
   </div>
 </div>
