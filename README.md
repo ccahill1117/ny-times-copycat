@@ -15,6 +15,10 @@ Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 - Adding new articles
 - Crossword?
 
+### The Web App
+- Login with a Google™️ Account
+- Once logged-in you can write an Op-ed
+
 ### Instructions
 - clone this repository
 -
