@@ -4,6 +4,10 @@ Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 
 ## By Christopher Thomas Cahill
 
+### Deployed Site
+
+[Click here to check out deployed site](https://ng-nytimes.firebaseapp.com/) 
+
 ### Features Included 1/25/2019
 - Basic layout and "Main" and "About" views
 - API call to include stock information
@@ -68,7 +72,7 @@ export class MastheadComponent implements OnInit {
 }
 ```
 
-The Alpha Vantage API returns a JSON object which may be parsed through bracket notation (lots of arrays). However, TypeScript does not allow
+The Alpha Vantage API returns a JSON object which may be parsed through bracket notation (lots of arrays). However, TypeScript does not allow for strings as array indexers. To solve this problem I set metaDataString and lastRefreshedString to type 'any' and then inserted them in the brackets. However, on occasion the app would compile and it would work -- see line of code with 'this.dowInfo'
 
 ##### MIT License
 
