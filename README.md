@@ -17,6 +17,7 @@ Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 
 ### Future Goals
 - Sorting pipe to sort op-eds by most recent (no Angular built in orderBy pipe...)
+- Alternatively, use firebaseListObservable methods (i.e. RxJS operators) to return ordered list....[see StackOverflow discussion here...](https://stackoverflow.com/questions/39133217/how-can-i-sort-a-firebaselistobservable-list-in-angularfire2-angular2)
 
 ### The Web App
 - Login with a Google™️ Account
