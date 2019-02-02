@@ -26,6 +26,7 @@ Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 ### Instructions
 - clone this repository
 - navigate to project directory
+- make a duplicate copy of "src/app/api-keys_template.ts" and name it "api-keys.ts" and fill in the requisite blank field with own Alpha Vantage and Firebase api info
 - $ npm install
 - $ ng serve --port (####) -o
 -
