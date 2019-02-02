@@ -13,10 +13,11 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { CrosswordComponent } from './crossword/crossword.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-
 import { masterFirebaseConfig } from './api-keys';
 import { CreateOpEdComponent } from './create-op-ed/create-op-ed.component';
 import { ArticleComponent } from './article/article.component';
+
+import { opEdPipe } from './articleType.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -37,6 +38,7 @@ export const firebaseConfig = {
     CrosswordComponent,
     CreateOpEdComponent,
     ArticleComponent,
+    opEdPipe
 
   ],
   imports: [

@@ -1,4 +1,4 @@
-import {Pipe, PipeTransform} from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 import { Article } from './article.model';
 
 @Pipe({
@@ -6,11 +6,14 @@ import { Article } from './article.model';
   pure: false
 })
 
-export class typePipe implements PipeTransform {
+export class opEdPipe implements PipeTransform {
   transform(input: Article[]) {
     var output: Article[] = [];
-
-
+    for (var i = 0; i < input.length-1; i++) {
+      if (input[i].type === "op-ed") {
+        output.push(input[i])
+      }
+    }
     return output;
   }
 }

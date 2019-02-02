@@ -6,7 +6,7 @@
   <div class="oped">
     <h2>op-ed</h2>
 
-    <ul *ngFor="let article of articles | async" class="">
+    <ul *ngFor="let article of articles | async articleType" class="">
       <li class="">
         <h3 (click)="goToArticlePage(article)"><em>{{article.title}}</em> by {{article.author}}</h3>
       </li>
