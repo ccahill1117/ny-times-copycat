@@ -15,6 +15,9 @@ Also, make sure to checkout the [Real NY Times](https://www.nytimes.com/)
 - Adding new articles
 - Crossword?
 
+### Future Goals
+- Sorting pipe to sort op-eds by most recent (no Angular built in orderBy pipe...)
+
 ### The Web App
 - Login with a Google™️ Account
 - Once logged-in you can write an Op-ed
